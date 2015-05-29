@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="tableView" destination="Rb1-Uc-R2p" id="HKL-w6-d1J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Wp4-EB-TAu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rb1-Uc-R2p">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rQR-Mo-xtq"/>
+                        <outlet property="delegate" destination="-1" id="1al-Mu-OoS"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Rb1-Uc-R2p" secondAttribute="trailing" id="4pu-ir-XfB"/>
+                <constraint firstAttribute="bottom" secondItem="Rb1-Uc-R2p" secondAttribute="bottom" id="L3H-nK-Xaf"/>
+                <constraint firstItem="Rb1-Uc-R2p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LR7-AP-M1d"/>
+                <constraint firstItem="Rb1-Uc-R2p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="l9w-4D-imT"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Rb1-Uc-R2p"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4pu-ir-XfB"/>
+                    <exclude reference="L3H-nK-Xaf"/>
+                    <exclude reference="LR7-AP-M1d"/>
+                    <exclude reference="l9w-4D-imT"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Rb1-Uc-R2p"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4pu-ir-XfB"/>
+                    <include reference="L3H-nK-Xaf"/>
+                    <include reference="LR7-AP-M1d"/>
+                    <include reference="l9w-4D-imT"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

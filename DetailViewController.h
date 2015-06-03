@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailView.h"
 
 @interface DetailViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIView *videoView;
 @property (strong, nonatomic) IBOutlet UIView *detailView;
+@property (strong, nonatomic) IBOutlet DetailView *videoView;
+@property (strong, nonatomic) IBOutlet UILabel *label1;
+@property (strong, nonatomic) IBOutlet UILabel *label2;
 - (IBAction)backButtonAction:(id)sender;
 
 @end

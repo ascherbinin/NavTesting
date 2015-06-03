@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "TableViewCell.h"
 #import "DetailViewController.h"
+#import "VideoViewController.h"
+#import "AppDelegate.h"
 
 @interface MainViewController ()
 
@@ -21,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    self.detailViewController = [[DetailViewController alloc] init];
+    self.detailNavigationController = [[UINavigationController alloc] initWithRootViewController:self.detailViewController];
     
 }
 
@@ -66,10 +70,12 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
     
-    DetailViewController* detailVC = [[DetailViewController alloc]initWithNibName:@"DetailViewController" bundle:nil];
-    [self.navigationController pushViewController:detailVC animated:YES];
+    
+    self.detailViewController = nil;
+    self.detailViewController = [[DetailViewController alloc] init];
+    [self.navigationController pushViewController:self.detailViewController animated:YES];
+
 }
 
 

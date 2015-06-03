@@ -18,6 +18,7 @@
 		936113B41B181EFC007C3C50 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936113B21B181EFC007C3C50 /* TableViewCell.xib */; };
 		936113BF1B1838C4007C3C50 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936113BD1B1838C4007C3C50 /* DetailViewController.m */; };
 		936113C01B1838C4007C3C50 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936113BE1B1838C4007C3C50 /* DetailViewController.xib */; };
+		936114041B1C46A1007C3C50 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936114031B1C46A1007C3C50 /* DetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		936113BC1B1838C4007C3C50 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		936113BD1B1838C4007C3C50 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		936113BE1B1838C4007C3C50 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		936114021B1C46A1007C3C50 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		936114031B1C46A1007C3C50 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 		936113771B181C17007C3C50 = {
 			isa = PBXGroup;
 			children = (
+				936114021B1C46A1007C3C50 /* DetailView.h */,
+				936114031B1C46A1007C3C50 /* DetailView.m */,
 				936113BB1B1838A0007C3C50 /* DetailView */,
 				936113AF1B181EDB007C3C50 /* TableCell */,
 				936113A91B181C50007C3C50 /* MainViewContoller */,
@@ -266,6 +271,7 @@
 				936113B31B181EFC007C3C50 /* TableViewCell.m in Sources */,
 				936113AD1B181C83007C3C50 /* MainViewController.m in Sources */,
 				936113861B181C17007C3C50 /* main.m in Sources */,
+				936114041B1C46A1007C3C50 /* DetailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

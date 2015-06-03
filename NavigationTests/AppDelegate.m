@@ -20,13 +20,11 @@
     
     _window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    MainViewController *mainVC = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    
-    
-    [self.window setBackgroundColor:[UIColor grayColor]];
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    self.mainNavigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
+
     [self.window makeKeyAndVisible];
-    [self.window setRootViewController:navController];
+    [self.window setRootViewController:_mainNavigationController];
     
     
     return YES;
